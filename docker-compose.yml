@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  httpd:
+    image: httpd:2.4
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
+    ports:
+      - 8080:80
+    restart: always
